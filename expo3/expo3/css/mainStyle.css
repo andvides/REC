@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background:rgb(144, 190, 175);
+    line-height: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn-menu {
+    display: block;
+    padding: 20px;
+    background: blue;
+    color: burlywood;
+}
+
+.contenedor-menu {
+    width: 18%;
+    min-width: 300px;
+    margin: 2px;
+    /*display: inline-block;*/
+    float:left;
+    overflow: auto;
+    padding-top: 50px;
+}
+
+.contenedor-menu .menu {
+    width: 100%;
+}
+
+.contenedor-menu ul {
+    list-style: none;
+}
+
+.contenedor-menu .menu li a {
+    color: burlywood;
+    display: block;
+    padding: 15px 20px;
+    background: #343a40;
+}
+
+.contenedor-menu .menu li a:hover {
+    background: darkgray;
+    color: black;
+}
+
+.contenedor-menu .menu li a span {
+    background: #465763;
+    color: white;
+    font-size: 12px;
+    line-height: 18px;
+    float: right;
+    margin-right: 10px;
+}
+ 
+.contenedor-menu .menu .activado > a {
+    background: #465763;
+    color: white;
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        padding-top: 80px;
+    }
+
+    .contenedor-menu {
+        margin: 0;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .btn-menu {
+        display: block;
+    }
+
+    .contenedor-menu .menu {
+       display: none; 
+    }
+}
+
+/*formulario registro*/
+
+.formulario {
+    margin: 10px;
+    background-color: rgb(144, 190, 175);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display:flex;
+    flex-direction: row;
+    margin-right: 300px;
+}
+
+.formulario .container-form{
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin: 10px;
+    transform: translate(-50%, -50%);
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+
+.formulario .form{
+    width: 100%;
+}
+
+.formulario .form .welcome-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.formulario .form .welcome-form h1{
+    font-weight: 300;
+    font-size: 30px;
+    color: #898989;
+}
+
+.formulario .form .welcome-form h2{
+    font-size: 34px;
+    margin-left: 10px;
+    margin-top: -4px;
+    font-weight: bold;
+    color: #5584FF;
+}
+
+.formulario .line-input{
+    max-width: 350px;
+    display: flex;
+    border-bottom: 1px solid #efefef;
+    margin: auto;
+    margin-top: 40px;
+    padding: 6px;
+    position: relative;
+}
+
+.formulario .border-input{
+    border-bottom: 1px solid #5584FF;
+}
+
+.formulario .line-input input{
+    border-style: none;
+    outline: 0px;
+    margin-left: 10px;
+    font-size: 16px;
+    width: 100%;
+    font-weight: 300;
+}
+
+.formulario .line-input label{
+    font-size: 20px;
+    position: relative;
+    top: -4px;
+    color: #0076ff;
+}
+
+.formulario .form button{
+    width: 300px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    color: white;
+    background: #5584FF;
+    border-style: none;
+    outline: 0px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario .form button:hover{
+    opacity: .9;
+}
+
+.formulario .form button label{
+    position: relative;
+    left: 50px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+
+.formulario .mensaje{
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: left;
+    padding: 6px;
+    color: red;
+}
+
+
+.formulario .active{
+    border-bottom: 4px solid #5584FF;
+}
+
+/*menu de arriba*/
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.bg-dark {
+    background-color: #343a40 !important;
+}
+
+.navbar-expand-md {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+
+}
+
+.contenedor-principal{
+    position: relative;
+    top:50px; left: 40px;
+    text-align: justify;
+}
+
+/*cards*/
+.fadedfx {
+    background-color: #fe5652;
+    visibility: hidden;
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0.0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
