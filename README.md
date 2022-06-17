@@ -1,8 +1,8 @@
-# REC
-Aplicativo de registro para eventos cientificos.
+# APLICATIVO DE REGISTRO PARA EVENTOS CIENTÍFICOS (REC)
+REC corresponde a un servicio PHP que permite administración de eventos científicos-académicos. El aplicativo consta de una interfaz de registro para los autores. Cada registro se gestiona mediante una base de datos en MySQL que captura la información esencial de cada autor (nombre, afiliación, correo electrónico), el aplicativo además permite someter un documento de texto, requisito típico en este tipo de eventos. El software dispone también, de un control de administrador que permite validar, aceptar o rechazar el trabajo sometido, (proceso necesario en los eventos).
 
-# Resumen
-REC, es un software en PHP y MySQL para administrar el registro y envío de artículos en eventos científicos
+# DISEÑO
+El software dispone de dos interfaces principales (diseñadas en CSS y HTML), una para los organizadores quienes pueden verificar, aprobar o rechazar los ponentes inscritos Esta contiene un mecanismo de autentificación para garantizar el acceso sea restringido al personal autorizado. La otra interfaz corresponde a la de ponentes, quienes pueden registrarse, ingresar información del trabajo a someter , seleccionar la modalidad de participación y subir el documento. Para mayor información ver el manual de usuario.
 
 # Instalación 
-Mirar manuales de instalación y uso
+El modelo fue diseñado bajo la arquitectura: modelo vista controlador (MVC). El modelo quien contiene los datos, fue diseñado mediante un script de MySQL. La base de datos la conforman dos tablas: una para autores y otra para administradores. La vista, interfaz de usuario, fue diseñada en HTML y CSS. El controlador, intermediador entre el Modelo y la vista, corresponde a códigos tipo Java-Script (js) que implementan las funciones lógicas del programa (conexión a base de datos, ingreso y eliminación de registros). Para mayor información ver el manual de instalación.
