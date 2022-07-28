@@ -5,4 +5,7 @@ REC corresponde a un servicio PHP que permite administración de eventos cientí
 El software dispone de dos interfaces principales (diseñadas en CSS y HTML), una para los organizadores quienes pueden verificar, aprobar o rechazar los ponentes inscritos Esta contiene un mecanismo de autentificación para garantizar el acceso sea restringido al personal autorizado. La otra interfaz corresponde a la de ponentes, quienes pueden registrarse, ingresar información del trabajo a someter , seleccionar la modalidad de participación y subir el documento. Para mayor información ver el manual de usuario.
 
 # Instalación 
-El modelo fue diseñado bajo la arquitectura: modelo vista controlador (MVC). El modelo quien contiene los datos, fue diseñado mediante un script de MySQL. La base de datos la conforman dos tablas: una para autores y otra para administradores. La vista, interfaz de usuario, fue diseñada en HTML y CSS. El controlador, intermediador entre el Modelo y la vista, corresponde a códigos tipo Java-Script (js) que implementan las funciones lógicas del programa (conexión a base de datos, ingreso y eliminación de registros). Para mayor información ver el manual de instalación.
+Siga las indicaciones del manual de instalación
+
+# Instalación 
+Siga las indicaciones del manual de usuario 
