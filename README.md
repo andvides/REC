@@ -7,5 +7,5 @@ El software dispone de dos interfaces principales (diseñadas en CSS y HTML), un
 # Instalación 
 Siga las indicaciones del manual de instalación
 
-# Instalación 
+# Funcionamiento 
 Siga las indicaciones del manual de usuario 
